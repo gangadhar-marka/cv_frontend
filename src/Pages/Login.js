@@ -26,9 +26,9 @@ function Login() {
       const user = await axios.post('/api/user/login', values);
       message.success('Login Success');
       localStorage.setItem('Student', JSON.stringify(user.data));
-
+      console.log(localStorage.getItem('Student'));
       setloading(false);
-      navigate('/profile');
+      //navigate('/profile');
     } catch (error) {
       setloading(false);
       message.error('Login Failed');
