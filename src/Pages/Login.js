@@ -35,11 +35,11 @@ function Login() {
     }
   };
 
-  useEffect(() => {
-    if (localStorage.getItem('Student')) {
-      navigate('/home');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem('Student')) {
+  //     navigate('/home');
+  //   }
+  // }, []);
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
