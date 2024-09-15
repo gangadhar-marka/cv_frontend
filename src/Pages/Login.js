@@ -28,18 +28,18 @@ function Login() {
       localStorage.setItem('Student', JSON.stringify(user.data));
       console.log(localStorage.getItem('Student'));
       setloading(false);
-      //navigate('/profile');
+      navigate('/profile');
     } catch (error) {
       setloading(false);
       message.error('Login Failed');
     }
   };
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('Student')) {
-  //     navigate('/home');
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (localStorage.getItem('Student')) {
+      navigate('/home');
+    }
+  }, []);
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
