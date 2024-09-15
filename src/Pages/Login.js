@@ -48,7 +48,7 @@ function Login() {
           {loading && <Spin />}
           <Form layout="vertical" onFinish={onfinish} style={{ height: '100%' }}>
             <img src="http://pngimg.com/uploads/cv/cv_PNG25.png" alt="cv" style={{ width: '100px', margin: '0 auto' }} />
-            <h4 style={{ color: '#003777' }}>Login</h4>
+            <h4 style={{ color: '#003777' }}>Loginn</h4>
             <hr />
             <Form.Item name="name" label="Enter Name" style={{ fontSize: 'large' }}>
               <Input value={formData.name} onChange={handleChange} />
